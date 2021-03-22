@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.6.0.min.js">//untuk memanggil j query</script>
+    <script type="text/javascript">// source code untuk merubah warna pada kotak menggunakan double klik
+        $(document).ready(function(){
+            $("div").dblclick(function(){
+                $(this).css({background:"red"});
+            });
+        });
+    </script>
+    <style type="text/css">
+        div{
+            background: yellow;
+            float: left;
+            width: 40px;
+            height: 40px;
+            margin: 15px;
+            }
+    </style>
+</head>
+<body>
+<p> klik 2x pada setiap kotak untuk mengubah warnanya </p>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>
